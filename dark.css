@@ -8,7 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:rgba(91, 153, 135, 0.582);
+    background:#091921;
 }
 .clock{
     width: 500px;
@@ -17,9 +17,10 @@ body{
     justify-content: center;
     align-items: center;
     background:url(./img/clock.png);
+    filter: invert(57%) sepia(100%) saturate(392%) hue-rotate(9deg) brightness(95%) contrast(88%);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 15px solid rgba(91, 153, 135, 0.582);
+    border: 15px solid #091921;
     border-radius:50%;
     box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
                 inset 0 -15px 15px rgba(255,255,255,0.05),
@@ -106,7 +107,7 @@ position: absolute;
     width: 800px;
     height: 300px;
     position: relative;
-    border: 15px solid rgba(91, 153, 135, 0.582);
+    border: 15px solid #091921;
     border-radius: 15px;
     margin-left: 200px;
     padding: 10px;
@@ -115,11 +116,12 @@ position: absolute;
     0 15px 15px rgba(0,0,0,0.3),
     inset 0 15px 15px rgba(0,0,0,0.2);
     max-width:1600px;
+    filter: invert(57%) sepia(100%) saturate(392%) hue-rotate(9deg) brightness(95%) contrast(88%);
 }
 .dhours, .dmins, .dsecs{
     font-size: 100px;
     position: relative;
-    color:rgba(11, 92, 69, 0.753);
+    filter: invert(57%) sepia(100%) saturate(392%) hue-rotate(9deg) brightness(95%) contrast(88%);
 }
 #dh::after{
     content:':';
@@ -140,8 +142,17 @@ position: absolute;
     position: absolute;
     top: 20px;
     font-size: 30px;
-    color: rgba(11, 92, 69, 0.753);
+    color: rgba(207, 164, 22, 0.781);
 }
 
+.button_btn{
+    position: absolute;
+    top: 20%;
 
-
+}
+.btn{
+    width: 120px;
+    height: 30px;
+    border-radius:5px;
+    cursor:pointer
+}
