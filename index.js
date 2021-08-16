@@ -1,3 +1,16 @@
+
+
+let switchMode=document.getElementById("switchModex");
+let theme=document.getElementById("themme");
+console.log(theme);
+switchMode.onclick = function(){
+if(theme.getAttribute('href')=='style.css'){
+  theme.setAttribute('href', 'dark.css')
+} else{
+  theme.href="style.css"
+}
+};
+
 let deg = 6;
 const hr=document.querySelector('#hr');
 const mn=document.querySelector('#mn');
@@ -47,7 +60,6 @@ setInterval(()=>{
     dn.textContent=dayNumber;
     monthName.textContent=MonthName;
 })
-console.log(day);
 function getWeekDay(day) {
     let days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
     return days[day.getDay()];
@@ -57,3 +69,4 @@ function getMonthName(day) {
     let month = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
     return month[day.getMonth()];
   };
+

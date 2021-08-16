@@ -8,7 +8,9 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:rgba(91, 153, 135, 0.582);
+    background:url(./img/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .clock{
     width: 500px;
@@ -17,14 +19,15 @@ body{
     justify-content: center;
     align-items: center;
     background:url(./img/clock.png);
+    background-color: blanchedalmond;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 15px solid rgba(91, 153, 135, 0.582);
+    border: 15px solid rgba(5, 54, 40, 0.753);
     border-radius:50%;
-    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
-                inset 0 -15px 15px rgba(255,255,255,0.05),
-                0 15px 15px rgba(0,0,0,0.3),
-                inset 0 15px 15px rgba(0,0,0,0.2)
+    box-shadow: 0 -15px 15px rgba(153, 13, 13, 0.05),
+                inset 0 -15px 15px rgba(95, 7, 7, 0.144),
+                0 15px 15px rgba(196, 16, 16, 0.3),
+                inset 0 15px 15px rgba(109, 6, 6, 0.281)
 } 
 .clock::before{
     content:'';
@@ -61,7 +64,7 @@ position: absolute;
     content:'';
     width: 12px;
     height: 120px;
-    background:rgba(199, 18, 102, 0.507);
+    background:rgba(71, 5, 36, 0.856);
     position: absolute;
     left: 50%;
     transform-origin: bottom;
@@ -73,7 +76,7 @@ position: absolute;
     content:'';
     width: 6px;
     height: 160px;
-    background:rgba(211, 207, 6, 0.829);
+    background:rgba(211, 207, 6, 0.945);
     position: absolute;
     left: 50%;
     bottom:50%;
@@ -106,20 +109,21 @@ position: absolute;
     width: 800px;
     height: 300px;
     position: relative;
-    border: 15px solid rgba(91, 153, 135, 0.582);
+    border: 15px solid rgba(5, 54, 40, 0.753);
     border-radius: 15px;
     margin-left: 200px;
+    background-color: blanchedalmond;;
     padding: 10px;
-    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
-    inset 0 -15px 15px rgba(255,255,255,0.05),
-    0 15px 15px rgba(0,0,0,0.3),
-    inset 0 15px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 -15px 15px rgba(153, 13, 13, 0.05),
+                inset 0 -15px 15px rgba(95, 7, 7, 0.144),
+                0 15px 15px rgba(196, 16, 16, 0.3),
+                inset 0 15px 15px rgba(109, 6, 6, 0.281);
     max-width:1600px;
 }
 .dhours, .dmins, .dsecs{
     font-size: 100px;
     position: relative;
-    color:rgba(11, 92, 69, 0.753);
+    color:rgba(129, 119, 119, 0.767),
 }
 #dh::after{
     content:':';
@@ -140,8 +144,26 @@ position: absolute;
     position: absolute;
     top: 20px;
     font-size: 30px;
-    color: rgba(11, 92, 69, 0.753);
+    color:rgba(133, 19, 199, 0.301),
 }
 
 
+.wrapper{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+}
 
+.switchMode{
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border:2px solid darkslategrey;
+    border-radius:5px;
+    background:blanchedalmond;
+    cursor: pointer;
+}
+.switchMode:hover{
+    background:rgba(5, 54, 40, 0.753);
+    color: white;
+}

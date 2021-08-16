@@ -8,7 +8,9 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:#091921;
+    background:url(./img/darkbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .clock{
     width: 500px;
@@ -145,14 +147,22 @@ position: absolute;
     color: rgba(207, 164, 22, 0.781);
 }
 
-.button_btn{
+.wrapper{
     position: absolute;
-    top: 20%;
-
+    left: 50%;
+    top: 5%;
 }
-.btn{
-    width: 120px;
-    height: 30px;
+
+.switchMode{
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border:2px solid darkslategrey;
     border-radius:5px;
-    cursor:pointer
+    background:blanchedalmond;
+    cursor: pointer;
+}
+.switchMode:hover{
+    background:rgba(5, 54, 40, 0.753);
+    color: white;
 }
