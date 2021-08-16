@@ -2,7 +2,6 @@
 
 let switchMode=document.getElementById("switchModex");
 let theme=document.getElementById("themme");
-console.log(theme);
 switchMode.onclick = function(){
 if(theme.getAttribute('href')=='style.css'){
   theme.setAttribute('href', 'dark.css')
@@ -10,6 +9,8 @@ if(theme.getAttribute('href')=='style.css'){
   theme.href="style.css"
 }
 };
+
+
 
 let deg = 6;
 const hr=document.querySelector('#hr');
@@ -60,6 +61,10 @@ setInterval(()=>{
     dn.textContent=dayNumber;
     monthName.textContent=MonthName;
 })
+
+
+
+
 function getWeekDay(day) {
     let days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
     return days[day.getDay()];
